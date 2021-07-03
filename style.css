@@ -1,31 +1,84 @@
-h3{
-    text-align: center;
-    padding-top: 1em;
-    font-family: 'Muli',sans-serif;
-    font-size: 32px;
-    line-height: 120%;
-    color: #2F1C6A;
-}
-p{
-    font-size: 20px;
+p, a{
+    font-size: 1em;
     line-height: 32px;
     font-family: 'Muli',sans-serif;
     font-weight: 400;
-    color: #36344D;
+    color: #675991 !important;
     letter-spacing: .3px;
 }
-.btn{
+.header {
+    overflow: hidden;
+    background-color: #fff;
+    padding: 30px 50px;
+}
+  
+.header h3, .header a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+.header a {
+    border: 2px solid #fff;
+}
+.header h3 {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Parisienne',cursive;
+    font-size: 3em;
+    font-weight: 100;
+    color: #2F1C6A;
+}
+.titles{
+    font-size: 2em;
+    line-height: 32px;
+    font-family: 'Muli',sans-serif;
+    color: #2F1C6A !important;
+    letter-spacing: .3px;
+}
+.subtitles{
+    font-size: 1em;
+    line-height: 32px;
+    font-weight: bold;
+    font-family: 'Muli',sans-serif;
+    color: #2F1C6A !important;
+    letter-spacing: .3px;
+}
+  
+.header-right {
+    float: right;
+}
+
+.btn-purple{
   background-color: #2F1C6A;
   border: solid 2px;
   border-radius: 10px;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 16px;
   text-decoration: none;
   margin: 2px 2px;
   cursor: pointer;
 }
-.btn:hover{
+.btn-purple:hover, .header a:hover{
     border: solid 2px #2F1C6A;
     color: #2F1C6A;
     background-color: #fff;
+    cursor: pointer;
 }
+
+@media screen and (max-width: 900px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+    .titles, .subtitles, p{
+        padding-left: 5%;
+    }
+  }

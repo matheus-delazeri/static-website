@@ -4,15 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/psicologia.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Clara</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <title>Clara Machado</title>
 </head>
 <body>
-<h3>Eh o grêmio!</h3>
+    <div class="header">
+        <h3 class="logo">Clara Machado</h3>
+        <div class="header-right">
+          <a href="#sobremim">Sobre mim</a>
+          <a>Experiência</a>
+          <a>Contatos</a>
+        </div>
+      </div>
+<hr>
+<br><br>
+<!--
 <center>
-<input id="msgBtn" type="submit" class="btn" onclick="showMessage()" value="Clique aqui!">
+<input id="msgBtn" type="submit" class="btn-purple" onclick="showMessage()" value="Clique aqui!">
 <p id="message" style="display:none">Parabéns Clara, tudo de bom! Até mais :)</p>
 </center>
+-->
+<div class="row" id="sobremim">
+    <br>
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+        <h3 class="titles">Sobre mim</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus maximus erat, non gravida ipsum euismod et. 
+            Etiam mattis sit amet erat sed semper. Etiam lacinia varius hendrerit. Aenean iaculis orci sit amet risus molestie, at tincidunt ligula laoreet. 
+            Sed varius ante eget ex mollis, vitae tincidunt purus molestie. Nunc quis lorem vitae orci rhoncus mattis. 
+    </div>
+    <div class="col-md-2" style="display: flex; justify-content: center;align-items: center;">
+        <img src="img/clara.png" style="margin-bottom: 5%;" width="100%">
+    </div>
+    <div class="col-md-2">
+        <div >
+            <h3 class="titles">Detalhes</h3>
+            <h4 class="subtitles">Nome</h4>
+            <p>Clara Machado Pinto</p>
+            <h4 class="subtitles">Idade</h4>
+            <p>20 anos</p>
+            <h4 class="subtitles">Localização</h4>
+            <p>Porto Alegre, RS - Brasil</p>
+        </div>
+    </div>
+    <div class="col-md-2"></div>
+</div>
 
 <script type="text/javascript">
 
