@@ -10,58 +10,160 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Clara Machado</title>
 </head>
 <body>
-    <div class="header">
-        <h3 class="logo">Clara Machado</h3>
-        <div class="header-right">
-          <a href="#sobremim">Sobre mim</a>
+    <div class="header" id="header"> 
+        <h3 class="name">Clara Machado</h3>
+        <div class="show-mobile" style="display:none;clear: both;"></div>
+        <a style="display: none;text-align: center;" class="show-mobile" onclick="showMenu()">Menu</a>
+        <div class="header-right" id="menu-options">
+          <a onclick="jump('sobremim-section')">Sobre mim</a>
+          <a onclick="jump('timeline')">Linha do tempo</a>
           <a>Experiência</a>
           <a>Contatos</a>
         </div>
-      </div>
-<hr>
-<br><br>
-<!--
-<center>
-<input id="msgBtn" type="submit" class="btn-purple" onclick="showMessage()" value="Clique aqui!">
-<p id="message" style="display:none">Parabéns Clara, tudo de bom! Até mais :)</p>
-</center>
--->
-<div class="row" id="sobremim">
-    <br>
-    <div class="col-md-2"></div>
-    <div class="col-md-4">
-        <h3 class="titles">Sobre mim</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus maximus erat, non gravida ipsum euismod et. 
-            Etiam mattis sit amet erat sed semper. Etiam lacinia varius hendrerit. Aenean iaculis orci sit amet risus molestie, at tincidunt ligula laoreet. 
-            Sed varius ante eget ex mollis, vitae tincidunt purus molestie. Nunc quis lorem vitae orci rhoncus mattis. 
     </div>
-    <div class="col-md-2" style="display: flex; justify-content: center;align-items: center;">
-        <img src="img/clara.png" style="margin-bottom: 5%;" width="100%">
-    </div>
-    <div class="col-md-2">
-        <div >
-            <h3 class="titles">Detalhes</h3>
-            <h4 class="subtitles">Nome</h4>
-            <p>Clara Machado Pinto</p>
-            <h4 class="subtitles">Idade</h4>
-            <p>20 anos</p>
-            <h4 class="subtitles">Localização</h4>
-            <p>Porto Alegre, RS - Brasil</p>
+    
+    <br class="hide-mobile"><br><br id="sobremim-section">
+        <div class="row" style="max-width: 100% !important;">
+            <br>
+            <div class="col-md-2 hide-mobile"></div>
+            <div class="col-md-4">
+                <h3 class="titles">
+                    <a id="sobremim-title" style="cursor: pointer;" onclick="changeText('sobremim')">Sobre mim</a> 
+                    <span style="cursor: pointer;">
+                    <a id="hobbies-title" style="opacity: 30%; text-decoration: none;padding-left: 3%;" onclick="changeText('hobbies')">Hobbies</a>
+                    </span>
+                </h3>
+                <hr>
+                <p id="sobremim-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus maximus erat, non gravida ipsum euismod et. 
+                    Etiam mattis sit amet erat sed semper. Etiam lacinia varius hendrerit. Aenean iaculis orci sit amet risus molestie, at tincidunt ligula laoreet. 
+                    Sed varius ante eget ex mollis, vitae tincidunt purus molestie. Nunc quis lorem vitae orci rhoncus mattis.</p> 
+                <p id="hobbies-text" style="display: none;">Aenean iaculis orci sit amet risus molestie, at tincidunt ligula laoreet. 
+                    Sed varius ante eget ex mollis, vitae tincidunt purus molestie. Nunc quis lorem vitae orci rhoncus mattis.</p>
+            </div>
+            <div class="col-md-2" style="display: flex; justify-content: center;align-items: center;">
+                <img src="img/clara.png" class="profile-img" style="margin-bottom: 5%;" width="100%">
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <h3 class="titles">Detalhes</h3>
+                    <br>
+                    <h4 class="subtitles">Nome</h4>
+                    <p>Clara Machado Pinto</p>
+                    <h4 class="subtitles">Idade</h4>
+                    <p id="age"></p>
+                    <h4 class="subtitles">Localização</h4>
+                    <p style="margin-left: -1%;"><i class="material-icons">room</i>Porto Alegre, RS - Brasil</p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="col-md-2"></div>
-</div>
+
+        <br><br><br id="timeline">
+        <h1 class="titles" style="text-align: center;">Minha <span>linha do tempo</span></h1>
+        <div class="container">
+            <div class="timeline-block timeline-block-right">
+                <div class="marker"></div>
+                <div class="timeline-content" onmouseover="showContent('2018')" onmouseout="hideContent('2018')">
+                    <h3>2018</h3>
+                    <span>Fim do ensino médio</span>
+                    <p id="2018">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                </div>
+            </div>
+
+            <div class="timeline-block timeline-block-left">
+                <div class="marker"></div>
+                <div class="timeline-content" onmouseover="showContent('2019')" onmouseout="hideContent('2019')">
+                    <h3>2019</h3>
+                    <span>Ingresso na faculdade</span>
+                    <p id="2019">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                </div>
+            </div>
+
+            <div class="timeline-block timeline-block-right">
+                <div class="marker"></div>
+                <div class="timeline-content" onmouseover="showContent('2020')" onmouseout="hideContent('2020')">
+                    <h3>2020</h3>
+                    <span>Programa de Familiarização do Hospital Psiquiátrico São Pedro</span>
+                    <p id="2020">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                </div>
+            </div>
+
+            <div class="timeline-block timeline-block-left">
+                <div class="marker"></div>
+                <div class="timeline-content" onmouseover="showContent('2021')" onmouseout="hideContent('2021')">
+                    <h3>2021</h3>
+                    <span>Conferir com a Clara</span>
+                    <p id="2021">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                </div>
+            </div>
+        </div>
+        <div style="height: 280px;">
+        </div>
+
 
 <script type="text/javascript">
 
-function showMessage(){
-    var message = document.getElementById("message");
-    var msgBtn = document.getElementById("msgBtn");
-    message.style.display = "block";
-    msgBtn.style.display = "none";
+function showMenu(){
+    document.getElementById("menu-options").style.display = "block";
+}
+function detectMob() {
+    return ( ( window.innerWidth <= 900 ) && ( window.innerHeight <= 900 ) );
+  }
+
+window.onload = function() {
+    getAge();
+}
+
+function jump(h){
+    var yOffset = -150; 
+    var element = document.getElementById(h);
+    var y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    if(detectMob()){
+        yOffset = -170;
+        document.getElementById("menu-options").style.display = "none";
+    }
+    var y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({top: y, behavior: 'smooth'});
+}
+
+function getAge(){
+    var birthDate = new Date(2001, 8, 15, 0, 0, 0, 0);
+    var currentDate = new Date();
+    var age = currentDate.getFullYear() - birthDate.getFullYear();
+    var month = currentDate.getMonth() - birthDate.getMonth();
+    var day = currentDate.getDate() - birthDate.getDate();
+    if ( month < 0 || month == 0 && day < 0 )
+    {
+        age--;
+    }
+    var ageField = document.getElementById("age");
+    ageField.textContent = age + " anos";
+}
+
+function changeText(option){
+    if(option === "hobbies"){
+        document.getElementById("hobbies-title").style.opacity = '100%';
+        document.getElementById("hobbies-text").style.display = 'block';
+        document.getElementById("sobremim-title").style.opacity = '30%';
+        document.getElementById("sobremim-text").style.display = 'none';
+    } else{
+        document.getElementById("hobbies-title").style.opacity = '30%';
+        document.getElementById("hobbies-text").style.display = 'none';
+        document.getElementById("sobremim-title").style.opacity = '100%';
+        document.getElementById("sobremim-text").style.display = 'block';
+    }
+}
+
+function showContent(text_id){
+    document.getElementById(text_id).style.display = "block";
+}
+
+function hideContent(text_id){
+    document.getElementById(text_id).style.display = "none";
 }
 
 </script>
