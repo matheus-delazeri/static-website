@@ -21,16 +21,17 @@
         <div class="header-right" id="menu-options">
           <a onclick="jump('sobremim-section')">Sobre mim</a>
           <a onclick="jump('timeline')">Linha do tempo</a>
-          <a>Experiência</a>
+          <a onclick="jump('experiencia')">Experiência</a>
           <a>Contatos</a>
         </div>
     </div>
+    <a onclick="jump('sobremim-section')" class="go-up-btn hide-mobile"><i class="material-icons">arrow_upward</i></a>
     
-    <br class="hide-mobile"><br><br id="sobremim-section">
-        <div class="row" style="max-width: 100% !important;">
+    <br class="hide-mobile"><br id="sobremim-section"><br>
+        <div class="row" style="margin: 0;">
             <br>
             <div class="col-md-2 hide-mobile"></div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-12">
                 <h3 class="titles">
                     <a id="sobremim-title" style="cursor: pointer;" onclick="changeText('sobremim')">Sobre mim</a> 
                     <span style="cursor: pointer;">
@@ -44,8 +45,8 @@
                 <p id="hobbies-text" style="display: none;">Aenean iaculis orci sit amet risus molestie, at tincidunt ligula laoreet. 
                     Sed varius ante eget ex mollis, vitae tincidunt purus molestie. Nunc quis lorem vitae orci rhoncus mattis.</p>
             </div>
-            <div class="col-md-2" style="display: flex; justify-content: center;align-items: center;">
-                <img src="img/clara.png" class="profile-img" style="margin-bottom: 5%;" width="100%">
+            <div class="col-md-2 col-sm-12" style="display: flex; justify-content: center;align-items: center;">
+                <center><img src="img/clara.png" class="profile-img" style="margin-bottom: 5%;" width="100%"></center>
             </div>
             <div class="col-md-3">
                 <div>
@@ -69,7 +70,9 @@
                     <div class="timeline-content" onclick="changeStatus('2018')">
                     <h3>2018</h3>
                     <span>Fim do ensino médio</span>
-                    <p id="2018">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    <div id="2018">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    </div>
                 </div>
             </div>
 
@@ -78,7 +81,9 @@
                 <div class="timeline-content" onclick="changeStatus('2019')">
                     <h3>2019</h3>
                     <span>Ingresso na faculdade</span>
-                    <p id="2019">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    <div id="2019">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    </div>
                 </div>
             </div>
 
@@ -87,7 +92,9 @@
                 <div class="timeline-content" onclick="changeStatus('2020')">
                     <h3>2020</h3>
                     <span>Programa de Familiarização do Hospital Psiquiátrico São Pedro</span>
-                    <p id="2020">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    <div id="2020">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    </div>
                 </div>
             </div>
 
@@ -95,24 +102,57 @@
                 <div class="marker"></div>
                 <div class="timeline-content" onclick="changeStatus('2021')">
                     <h3>2021</h3>
-                    <span>Conferir com a Clara</span>
-                    <p id="2021">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    <span>Estágio Psicopato</span>
+                    <div id="2021">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div style="height: 280px;">
+        <br><br><br>
+        <div class="row colored-div" style="min-height: 850px;margin: 0;">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <br><br id="experiencia">
+                <h1 class="titles" style="text-align: center;">Minha <span>experiência</span></h1>
+                <br><br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <center><img class="img-exp" src="img/sao-pedro-cavalo.png" width="100%"></center>
+                    </div>
+                    <div class="col-md-8">
+                        <br><br>
+                        <h4 class="subtitles">Programa de Familiarização do Hospital Psiquiátrico São Pedro</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div style="display: none;" class="col-md-4 show-mobile">
+                        <center><img class="img-exp" src="img/sapp.png" width="100%"></center>
+                    </div>
+                    <div class="col-md-8">
+                        <br><br>
+                        <h4 class="subtitles">Serviço de Atendimento e Pesquisa em Psicologia (SAPP)</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-exp hide-mobile" src="img/sapp.png" width="100%">
+                    </div>
+                </div>
+            </div>
         </div>
 
 
 <script type="text/javascript">
 
-function detectMob() {
-    return ( ( window.innerWidth <= 900 ) && ( window.innerHeight <= 900 ) );
-  }
-
 window.onload = function() {
     getAge();
 }
+
+function detectMob() {
+    return ( ( window.innerWidth <= 900 ) && ( window.innerHeight <= 900 ) );
+  }
 
 function jump(h){
     var yOffset = -150; 
