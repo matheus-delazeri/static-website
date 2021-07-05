@@ -1,7 +1,6 @@
 .main{
     max-width: 100% !important;
 }
-
 p, a{
     font-size: 1em;
     line-height: 32px;
@@ -29,15 +28,14 @@ a:hover{
     color: #2F1C6A;
     margin: 0 3%;
 }
-.contact-icons:hover{
-    -webkit-transform: scale(1.2);
+.contact-icons:hover, .marker:hover{
+    -webkit-transform: scale(1.4);
 }
 .rights-p{
     text-align: center;
     line-height: 10px;
     font-size: 13px;
 }
-  
 .header h3, .header a {
     float: left;
     text-align: center;
@@ -73,11 +71,9 @@ a:hover{
     color: #2F1C6A !important;
     letter-spacing: .3px;
 }
-  
 .header-right {
     float: right;
 }
-
 .header a:hover{
     border: solid 2px #2F1C6A;
     color: #2F1C6A;
@@ -96,13 +92,11 @@ a:hover{
 .go-up-btn i{
     font-size: 32px !important;
 }
-
 .img-exp{
-    border: 3px solid #2F1C6A;
+    box-shadow: 0px 0px 0px 3px rgba(47, 28, 106, .8);
     border-radius: 50%;
-    background-color: #2F1C6A;
+    background-color: rgba(47, 28, 106, .8);
 }
-
 @media screen and (max-width: 900px) {
     .header{
       padding: 30px 40px 10px 40px !important;
@@ -144,21 +138,18 @@ a:hover{
     .img-exp{
         width: 80%;
     }
-  }
- 
- h1 span {
+}
+h1 span {
     font-weight: 600;
- }
- 
- .container {
+}
+.container {
     width: 80%;
     padding: 50px 0;
     margin: 50px auto;
     position: relative;
     overflow: hidden;
- }
- 
- .container:before {
+}
+.container:before {
     content: '';
     position: absolute;
     top: 0;
@@ -167,9 +158,8 @@ a:hover{
     width: 2px;
     height: 100%;
     background: #CCD1D9;
- }
- 
- .timeline-block {
+}
+.timeline-block {
     width: -webkit-calc(50% + 8px);
     width: -moz-calc(50% + 8px);
     width: calc(50% + 8px);
@@ -182,19 +172,16 @@ a:hover{
     -moz-box-pack: justify;
     justify-content: space-between;
     clear: both;
- }
- 
- .timeline-block-right {
+}
+.timeline-block-right {
     float: right;
- }
- 
- .timeline-block-left {
+}
+.timeline-block-left {
     float: left;
     direction: rtl;
     text-align: right;
- }
- 
- .marker {
+}
+.marker {
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -202,34 +189,32 @@ a:hover{
     background: #2F1C6A;
     margin-top: 10px;
     z-index: 9998;
- }
- .timeline-content {
+    cursor: pointer;
+}
+.timeline-content {
     width: 95%;
     padding: 0 15px;
     color: #666
- }
+}
  .timeline-content:hover{
      cursor: pointer;
- }
- 
+}
  .timeline-content h3 {
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 25px;
     font-weight: 500;
     color: #2F1C6A;
- }
- 
+}
  .timeline-content span {
     font-size: 15px;
     color: #2F1C6A;
     opacity: 50%;
- }
+}
  .timeline-content div {
      display: none;
- }
- 
- @media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 768px) {
     .container:before {
        left: 8px;
        width: 2px;
@@ -247,5 +232,5 @@ a:hover{
        direction: ltr;
        text-align: left;
     }
- }
+}
  
