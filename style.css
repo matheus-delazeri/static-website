@@ -13,6 +13,7 @@ p, a{
 a:hover{
     color: #2F1C6A !important;
     cursor: pointer;
+    text-decoration: none;
 }
 .header {
     z-index: 9999;
@@ -21,6 +22,20 @@ a:hover{
     padding: 30px 50px;
     top: 0;
     width: 100%;
+}
+.contact-icons{
+    font-size: 40px;
+    text-align: center;
+    color: #2F1C6A;
+    margin: 0 3%;
+}
+.contact-icons:hover{
+    -webkit-transform: scale(1.2);
+}
+.rights-p{
+    text-align: center;
+    line-height: 10px;
+    font-size: 13px;
 }
   
 .header h3, .header a {
@@ -79,8 +94,9 @@ a:hover{
     z-index: 9999 !important;
 }
 .go-up-btn i{
-    font-size: 35px !important;
+    font-size: 32px !important;
 }
+
 .img-exp{
     border: 3px solid #2F1C6A;
     border-radius: 50%;
