@@ -86,10 +86,19 @@ a:hover{
 .go-up-btn{
     position: fixed;
     right: 50px;
-    bottom: 50px;
+    bottom: 70px;
     z-index: 9999 !important;
 }
 .go-up-btn i{
+    font-size: 32px !important;
+}
+.go-down-btn{
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+    z-index: 9999 !important;
+}
+.go-down-btn i{
     font-size: 32px !important;
 }
 .img-exp{
