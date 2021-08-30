@@ -7,6 +7,3 @@ A simple static website made for my friend
 - HTML & CSS
 - JavaScript
 
-# Link to website
-
-[https://matheus-delazeri.github.io/index/](https://matheus-delazeri.github.io/index/)
